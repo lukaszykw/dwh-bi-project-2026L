@@ -17,10 +17,9 @@
 ## Pliki do oddania jako zalaczniki
 
 - `KM3_Raport_Finalny.docx` lub wyeksportowany z niego PDF.
-- `KM3_Prezentacja.pptx`, jesli zespół zdecyduje sie prezentowac ze slajdow.
 - `Power_BI_Raport.pdf` - eksport raportow Power BI.
 - Plik `.pbix` z Power BI, jesli zostal zapisany lokalnie.
-- `STTM_KM2-1.xlsx`, najlepiej po aktualizacji do finalnego ETL.
+- Dokument STTM, jesli jest wymagany przez prowadzacego, moze byc dolaczony poza repozytorium.
 
 ## Pliki lokalne, ktorych nie wrzucac do repozytorium
 
