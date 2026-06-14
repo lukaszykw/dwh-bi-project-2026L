@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.vs/
+~$*
+*.tmp
+*.log
+config/etl_config.json
+data/cache/
+data/raw/
+data/processed/
+logs/
+github_DWH-project/

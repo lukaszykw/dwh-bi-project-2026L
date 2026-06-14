@@ -1,0 +1,4 @@
+Konspekt zadania w formacie pdf obejmujący następujące elementy:
+- Ustalenie składu zespołu i tematyki zadania
+- Analiza źródeł danych pod kątem dostępności, harmonogramu odświeżania, niezbędnych transformacji
+- Opracowanie wysokopoziomowej architektury rozwiązania

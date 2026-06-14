@@ -1,0 +1,31 @@
+{
+  "database": {
+    "driver": "ODBC Driver 17 for SQL Server",
+    "server": "localhost",
+    "database": "climate_mental_health_dw",
+    "trusted_connection": true,
+    "username": "",
+    "password": ""
+  },
+  "etl": {
+    "start_year": 2000,
+    "end_year": 2010,
+    "weather_start_date": "2000-01-01",
+    "weather_end_date": "2010-12-31",
+    "countries_path": "config/countries_europe.json",
+    "batch_size": 1000,
+    "truncate_staging_before_load": true,
+    "weather_cache_dir": "data/cache/weather",
+    "weather_request_delay_seconds": 10,
+    "weather_max_retries": 12,
+    "weather_use_cache_only": false,
+    "weather_skip_failed_countries": true
+  },
+  "sources": {
+    "open_meteo_archive_url": "https://archive-api.open-meteo.com/v1/archive",
+    "world_bank_indicator_url": "https://api.worldbank.org/v2/country/{country_code}/indicator/{indicator}",
+    "economy_csv_path": "data/raw/FactEconomyYearly.csv",
+    "mental_health_csv_url": "",
+    "mental_health_csv_path": "data/raw/FactMentalHealthYearly.csv"
+  }
+}
