@@ -10,22 +10,23 @@
 - `sql/` - skrypty ELT i weryfikacyjne.
 - `config/etl_config.example.json` - przykladowa konfiguracja bez lokalnych danych logowania.
 - `config/countries_europe.json` - metadane krajow wykorzystywane przez ETL.
+- `data/raw/` - lokalne pliki CSV uzyte jako zrodla finalnego ETL.
 - `data/templates/` - szablony danych wejsciowych.
 - `tests/` - opis testow funkcjonalnych.
-- `scripts/generate_km3_documents.py` - generator raportu i prezentacji.
+- `STTM.xlsx` - finalne mapowanie source-to-target.
 
 ## Pliki do oddania jako zalaczniki
 
 - `KM3_Raport_Finalny.docx` lub wyeksportowany z niego PDF.
 - `Power_BI_Raport.pdf` - eksport raportow Power BI.
 - Plik `.pbix` z Power BI, jesli zostal zapisany lokalnie.
-- Dokument STTM, jesli jest wymagany przez prowadzacego, moze byc dolaczony poza repozytorium.
+- `STTM.xlsx` - finalny dokument STTM.
 
 ## Pliki lokalne, ktorych nie wrzucac do repozytorium
 
 - `config/etl_config.json` - lokalna konfiguracja polaczenia z baza.
 - `data/cache/` - cache Open-Meteo.
-- `data/raw/` - lokalne pliki zrodlowe CSV.
+- `data/cache/` - cache Open-Meteo.
 - `.vs/` - pliki Visual Studio.
 - `github_DWH-project/` - pomocniczo sklonowane repo.
 - `__pycache__/`, `*.pyc`, `~$*` - artefakty narzedzi.

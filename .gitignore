@@ -4,9 +4,10 @@ __pycache__/
 ~$*
 *.tmp
 *.log
+*.backup.xlsx
+STTM_KM2-1.xlsx
 config/etl_config.json
 data/cache/
-data/raw/
 data/processed/
 logs/
 github_DWH-project/

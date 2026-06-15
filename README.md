@@ -50,13 +50,15 @@ python run_etl.py
 sql/verification_km3.sql
 ```
 
-## Dane lokalne
+## Dane źródłowe
 
-Lokalne dane CSV i cache API sa ignorowane przez git. Do uruchomienia ETL potrzebne sa pliki:
+Repozytorium zawiera lokalne pliki CSV używane w finalnym ETL:
 
 ```text
 data/raw/FactEconomyYearly.csv
 data/raw/FactMentalHealthYearly.csv
 ```
 
-Szczegoly mapowania sa opisane w `ETL_README.md`.
+Cache odpowiedzi Open-Meteo nie jest wersjonowany. Przy uruchomieniu ETL dane pogodowe zostana pobrane z API albo odczytane z lokalnego cache, jesli uzytkownik posiada katalog `data/cache/weather`.
+
+Szczegoly mapowania danych sa opisane w `ETL_README.md`, a finalne mapowanie source-to-target znajduje sie w `STTM.xlsx`.
