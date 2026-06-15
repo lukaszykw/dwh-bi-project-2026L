@@ -249,15 +249,33 @@ def build_report() -> None:
     )
 
     add_heading(doc, "11. Podział pracy w zespole")
-    doc.add_paragraph("Sekcja do doprecyzowania przez zespół przed oddaniem. Proponowany układ:")
+    doc.add_paragraph(
+        "Prace w projekcie zostały podzielone zgodnie z głównymi obszarami systemu: analizą źródeł, "
+        "projektowaniem modelu danych, implementacją ETL/ELT, walidacją jakości danych oraz przygotowaniem "
+        "warstwy raportowej. Poszczególne elementy były konsultowane w zespole, tak aby model hurtowni, "
+        "proces przetwarzania i raporty Power BI były spójne z założeniami projektu."
+    )
     add_table(
         doc,
         ["Osoba", "Zakres prac"],
         [
-            ["Liwia Jankowska", "Źródła danych, przygotowanie danych CSV, część raportowa / dokumentacja - do doprecyzowania."],
-            ["Wiktoria Kawa", "Model danych, STTM, walidacja danych / Power BI - do doprecyzowania."],
-            ["Wojciech Łukaszyk", "SQL Server, ETL/ELT, testy funkcjonalne, integracja Power BI - do doprecyzowania."],
+            [
+                "Liwia Jankowska",
+                "Analiza źródeł danych dotyczących zdrowia psychicznego i ekonomii, przygotowanie oraz weryfikacja plików CSV, udział w mapowaniu zaburzeń psychicznych do kategorii używanych w hurtowni, wsparcie opisu źródeł danych i interpretacji raportów biznesowych.",
+            ],
+            [
+                "Wiktoria Kawa",
+                "Projektowanie modelu hurtowni danych, przygotowanie dokumentu STTM i założeń transformacji, walidacja zgodności tabel wymiarów i faktów z wymaganiami KM2/KM3, udział w analizie jakości danych oraz w przygotowaniu warstwy raportowej Power BI.",
+            ],
+            [
+                "Wojciech Łukaszyk",
+                "Implementacja modelu SQL Server, przygotowanie modułu ETL/ELT w Pythonie i SQL, integracja danych ze stagingu do hurtowni, przygotowanie testów funkcjonalnych i zapytań weryfikacyjnych, konfiguracja modelu Power BI oraz uporządkowanie repozytorium projektu.",
+            ],
         ],
+    )
+    doc.add_paragraph(
+        "Elementy końcowe, takie jak dobór wizualizacji, wnioski biznesowe, testy end-to-end oraz przygotowanie "
+        "materiałów do oddania, były realizowane wspólnie na podstawie wyników działania systemu i raportów Power BI."
     )
 
     add_heading(doc, "12. Załączniki")
